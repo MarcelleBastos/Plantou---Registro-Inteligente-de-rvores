@@ -2,19 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Plantou! — Monitoramento e Adoção de Árvores Urbanas</title>
-  <link rel="stylesheet" href="style.css" />
   <meta name="description" content="Plataforma de monitoramento e adoção de árvores urbanas — transparência, engajamento e ESG.">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-wrap">
-      <a class="brand" href="#" aria-label="Página inicial Plantou!">
+      <a class="brand" href="index.html" aria-label="Página inicial">
         <span class="brand-logo" aria-hidden="true">🌱</span>
         <span class="brand-text">Plantou!</span>
       </a>
+
       <nav class="nav" aria-label="Primária">
         <a href="#como-funciona">Como funciona</a>
         <a href="#mapa">Mapa</a>
@@ -22,7 +23,11 @@
         <a href="#manutencao">Manutenção</a>
         <a href="#beneficios">Benefícios</a>
       </nav>
-      <a class="btn btn--ghost" href="#adocao">Quero adotar</a>
+
+      <div class="header-actions">
+        <a class="btn btn--ghost" href="login.html">Entrar</a>
+        <a class="btn" href="#adocao">Quero adotar</a>
+      </div>
     </div>
   </header>
 
@@ -37,7 +42,7 @@
         </p>
         <div class="hero-cta">
           <a class="btn" href="#mapa">Ver mapa</a>
-          <a class="btn btn--ghost" href="#adocao">Adotar uma árvore</a>
+          <a class="btn btn--ghost" href="login.html">Entrar</a>
         </div>
         <ul class="badges" aria-label="Destaques">
           <li>QR Code por árvore</li>
@@ -45,6 +50,7 @@
           <li>PWA (offline-ready)</li>
         </ul>
       </div>
+
       <div class="hero-card" role="img" aria-label="Visualização de árvore com QR Code">
         <div class="qr-mock">
           <div class="qr"></div>
@@ -95,7 +101,7 @@
     </div>
   </section>
 
-  <!-- Mapa (placeholder visual sem JS) -->
+  <!-- Mapa (placeholder visual) -->
   <section id="mapa" class="section section--alt">
     <div class="container">
       <div class="section-head">
@@ -221,35 +227,30 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer minimalista -->
   <footer class="site-footer" role="contentinfo">
-  <div class="container foot-min">
-    <a class="brand-min" href="#" aria-label="Página inicial">
-      <span aria-hidden="true">🌱</span><strong>Plantou!</strong>
-    </a>
-
-    <nav class="foot-nav" aria-label="Rodapé">
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#mapa">Mapa</a>
-      <a href="#adocao">Adoção</a>
-      <a href="#manutencao">Manutenção</a>
-    </nav>
-
-    <div class="foot-meta">
-      <span>© <span id="year"></span> Plantou!</span>
-      <a href="#" class="link-min">Privacidade</a>
-      <a href="#" class="link-min">Termos</a>
-      <button class="top-link" type="button" aria-label="Voltar ao topo">↑</button>
+    <div class="container foot-min">
+      <a class="brand-min" href="#" aria-label="Página inicial">
+        <span aria-hidden="true">🌱</span><strong>Plantou!</strong>
+      </a>
+      <nav class="foot-nav" aria-label="Rodapé">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#adocao">Adoção</a>
+        <a href="#manutencao">Manutenção</a>
+      </nav>
+      <div class="foot-meta">
+        <span>© <span id="year"></span> Plantou!</span>
+        <a href="login.html" class="link-min">Entrar</a>
+        <button class="top-link" type="button" aria-label="Voltar ao topo">↑</button>
+      </div>
     </div>
-  </div>
-
-  <script>
-    // Ano dinâmico e scroll suave para o topo
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelector('.top-link')?.addEventListener('click', () =>
-      window.scrollTo({ top: 0, behavior: 'smooth' })
-    );
-  </script>
-</footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.querySelector('.top-link')?.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      );
+    </script>
+  </footer>
 </body>
 </html>

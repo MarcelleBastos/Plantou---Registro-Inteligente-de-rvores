@@ -1,0 +1,86 @@
+/* ===== Página de Login (usa tokens do style.css) ===== */
+.auth {
+  min-height: calc(100vh - 140px); /* viewport menos header/footer */
+  display: grid;
+  align-items: center;
+  padding: 40px 0 24px;
+  background: radial-gradient(900px 400px at 90% -10%, rgba(49,194,124,0.12), transparent 60%);
+}
+
+.auth-card{
+  max-width: 480px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--card) 100%);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.auth-head h1{
+  margin: 0 0 6px;
+  font-size: 1.65rem;
+}
+
+.auth-form{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.field{
+  display: grid;
+  gap: 6px;
+}
+.field span{
+  font-size: .95rem;
+  color: var(--muted);
+}
+input[type="email"],
+input[type="password"]{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+  color: var(--text);
+  outline-color: color-mix(in oklab, var(--brand), transparent 60%);
+}
+
+/* Acessibilidade visual para :invalid (navegadores suportados) */
+input:invalid{
+  border-color: color-mix(in oklab, #ff6b6b, var(--stroke) 30%);
+}
+
+.auth-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+.check{
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--muted);
+}
+.check input{ transform: scale(1.05); }
+
+.auth-btn{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.form-note{
+  font-size: .9rem;
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+/* Links abaixo do formulário */
+.auth-alt{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
