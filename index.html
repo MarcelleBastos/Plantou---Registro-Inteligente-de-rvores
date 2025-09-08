@@ -222,17 +222,34 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container foot">
-      <p>© <span id="year"></span> Plantou! — Preservação com tecnologia.</p>
-      <nav class="nav nav--foot" aria-label="Rodapé">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#adocao">Adoção</a>
-        <a href="#manutencao">Manutenção</a>
-      </nav>
+  <footer class="site-footer" role="contentinfo">
+  <div class="container foot-min">
+    <a class="brand-min" href="#" aria-label="Página inicial">
+      <span aria-hidden="true">🌱</span><strong>Plantou!</strong>
+    </a>
+
+    <nav class="foot-nav" aria-label="Rodapé">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#adocao">Adoção</a>
+      <a href="#manutencao">Manutenção</a>
+    </nav>
+
+    <div class="foot-meta">
+      <span>© <span id="year"></span> Plantou!</span>
+      <a href="#" class="link-min">Privacidade</a>
+      <a href="#" class="link-min">Termos</a>
+      <button class="top-link" type="button" aria-label="Voltar ao topo">↑</button>
     </div>
-    <!-- Ano dinâmico sem JS: ajuste manual se quiser -->
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
+  </div>
+
+  <script>
+    // Ano dinâmico e scroll suave para o topo
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelector('.top-link')?.addEventListener('click', () =>
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    );
+  </script>
+</footer>
 </body>
 </html>
