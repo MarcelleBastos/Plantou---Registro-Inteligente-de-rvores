@@ -1,3 +1,0 @@
-!! Alterar a div class map no placeholder, no index.html, pois tem muita informação, poderia ser em um arquivo separado contendo
-!! mais árvores aparecendo no mapa.
-
