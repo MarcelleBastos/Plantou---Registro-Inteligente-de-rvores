@@ -144,4 +144,3 @@ Gustavo Prelado da Silva
 
 Marcos Antônio Pontes dos Santos da Silva
 
-Se quiser, posso gerar este README em PDF, Markdo
