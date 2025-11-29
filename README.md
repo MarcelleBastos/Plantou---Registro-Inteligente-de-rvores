@@ -49,45 +49,44 @@ Sensores para monitoramento de temperatura, umidade e parâmetros ambientais (co
 Transparência garantida por registros em blockchain.
 
 # 🛠️ Tecnologias Utilizadas
-Frontend
+### Frontend
+-HTML5
 
-HTML5
+-CSS3
 
-CSS3
+-JavaScript
 
-JavaScript
+-Interface responsiva
 
-Interface responsiva
+-Validação de formulários
 
-Validação de formulários
+### Backend
 
-Backend
+-PHP (CRUD de árvores, usuários e doações)
 
-PHP (CRUD de árvores, usuários e doações)
+-Autenticação com password_hash
 
-Autenticação com password_hash
-
-Tratamento de erros e validação de dados
+-Tratamento de erros e validação de dados
 
 ### Banco de Dados
 
 ### MySQL
 
-Configuração e testes via XAMPP
+-Configuração e testes via XAMPP
 
-Conexão com mysqli ou PDO
+-Conexão com mysqli ou PDO
 
-Tabelas para árvores, usuários, doações, adoções e histórico
+-Tabelas para árvores, usuários, doações, adoções e histórico
 
 ### Segurança
 
-password_hash e password_verify
+-password_hash e password_verify
 
-Prepared Statements contra SQL Injection
+-Prepared Statements contra SQL Injection
 
-Controle de sessões e restrição de páginas internas
+-Controle de sessões e restrição de páginas internas
 
-🗂️ Estrutura Geral do Projeto
+## 🗂️ Estrutura Geral do Projeto
 /plantou
 ├── index.php
 ├── login.php
@@ -100,9 +99,9 @@ Controle de sessões e restrição de páginas internas
 ├── js/
 └── assets/
 
-🌳 Reflorestamento no Plantou!
+# 🌳 Reflorestamento no Plantou!
 
-O projeto integra o conceito de reflorestamento urbano, permitindo que doações sejam destinadas ao plantio de novas árvores e recuperação de áreas verdes degradadas.
+### O projeto integra o conceito de reflorestamento urbano, permitindo que doações sejam destinadas ao plantio de novas árvores e recuperação de áreas verdes degradadas.
 Através do QR Code, o usuário pode acompanhar:
 
 Crescimento da árvore adotada/plantada
@@ -117,21 +116,21 @@ Histórico ambiental atualizado
 
 Essa abordagem conecta tecnologia, educação ambiental e impacto real.
 
-🚀 Como Executar o Projeto (XAMPP)
+# 🚀 Como Executar o Projeto (XAMPP)
 
-Instalar XAMPP.
+## Instalar XAMPP.
 
-Mover a pasta do projeto para:
+## Mover a pasta do projeto para:
 C:/xampp/htdocs/plantou
 
-Iniciar Apache e MySQL.
+## Iniciar Apache e MySQL.
 
-Importar o banco de dados no phpMyAdmin.
+## Importar o banco de dados no phpMyAdmin.
 
 Acessar no navegador:
 http://localhost/plantou.
 
-👥 Equipe do Projeto
+# 👥 Equipe do Projeto
 
 Marcelle Martins Dobroski Bastos
 
