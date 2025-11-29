@@ -2,17 +2,17 @@
 
 Central de Monitoramento, Adoção, Reflorestamento e Preservação de Árvores Urbanas
 
-📌 Sobre o Projeto
+# 📌 Sobre o Projeto
 
 O Plantou! é uma plataforma digital desenvolvida como projeto acadêmico, criada para centralizar informações sobre árvores urbanas e incentivar a população a participar de ações de preservação e reflorestamento.
 A plataforma permite acompanhar cada árvore, adotar, doar, solicitar manutenção e visualizar dados ambientais de forma simples, transparente e acessível.
 
-🎯 Objetivo Principal
+# 🎯 Objetivo Principal
 
 Criar um sistema capaz de registrar, monitorar e disponibilizar informações sobre árvores urbanas, promovendo conscientização ambiental e iniciativas de reflorestamento, utilizando tecnologia moderna como QR Code, PWA, IoT e banco de dados integrado.
 
-🧩 Funcionalidades Principais
-✔️ Cadastro e Login
+# 🧩 Funcionalidades Principais
+## ✔️ Cadastro e Login
 
 Sistema desenvolvido em PHP, com autenticação e validação.
 
@@ -20,7 +20,7 @@ Hash seguro de senhas (password_hash).
 
 Formulários responsivos (HTML, CSS e JavaScript).
 
-✔️ Acompanhamento e Reflorestamento
+## ✔️ Acompanhamento e Reflorestamento
 
 Cada árvore possui um QR Code único para rastreamento.
 
@@ -30,25 +30,25 @@ Adoção de árvores e acompanhamento do impacto ambiental (CO²).
 
 Doações direcionadas para ações de reflorestamento urbano e recuperação de áreas verdes.
 
-✔️ Sistema de Doações e Recompensas
+## ✔️ Sistema de Doações e Recompensas
 
 Doações com valor simbólico a partir de R$5, destinadas ao plantio e reflorestamento.
 
 Usuários acumulam moedas virtuais, badges e níveis conforme interações.
 
-✔️ Plataforma como PWA
+## ✔️ Plataforma como PWA
 
 Acesso offline.
 
 Disponível em qualquer dispositivo com interface responsiva.
 
-✔️ IoT e Blockchain
+## ✔️ IoT e Blockchain
 
 Sensores para monitoramento de temperatura, umidade e parâmetros ambientais (conceito acadêmico).
 
 Transparência garantida por registros em blockchain.
 
-🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 Frontend
 
 HTML5
@@ -69,9 +69,9 @@ Autenticação com password_hash
 
 Tratamento de erros e validação de dados
 
-Banco de Dados
+### Banco de Dados
 
-MySQL
+### MySQL
 
 Configuração e testes via XAMPP
 
@@ -79,7 +79,7 @@ Conexão com mysqli ou PDO
 
 Tabelas para árvores, usuários, doações, adoções e histórico
 
-Segurança
+### Segurança
 
 password_hash e password_verify
 
